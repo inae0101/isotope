@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  width: 380px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(218, 171, 171, 0.623);
+}
+header h1 {
+  font: bold 50px/1 'Noto Sans KR';
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-150%);
+  
+}
+header h1::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #fff;
+  margin-top: 20px;
+
+}
+header h1::before {
+  content: "2022 NEW JEWELRY STORY";
+  display: block;
+  font: 14px/1 'Noto Sans KR';
+  letter-spacing: 2px;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  opacity: 0.8;
+}
+
+main {
+  margin-left: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main section {
+  width: 100%;
+  float: left;
+}
+main section article {
+  float: left;
+  width: 20%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+main section article div {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  box-sizing: border-box;
+}
+main section article div img {
+  width: 100%;
+}
+main section article div h2 {
+  font: bold 14px/1 'Noto Sans KR';
+  color: #444;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+main section article div p {
+  font: 13px/1.2 'Noto Sans KR';
+  color: #777;
+  margin-bottom: 15px;
+}
+main ul {
+  float: right;
+}
+main ul li {
+  float: left;
+  width: 100px;
+  height: 26px;
+  margin-right: 20px;
+}
+main ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 7px/26px 'Noto Sans KR';
+  color: #aaa;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #fff;
+}
+main ul li.on a {
+  background: rgba(218, 171, 171, 0.623);
+  color: #fff;
+}
+
+@media screen and (max-width: 1599px) {
+  header {
+    width: 350px;
+  }
+
+  main {
+    margin-left: 350px;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+  header h1 {
+    font: bold 24px/1 'Noto Sans KR';
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header h1::after {
+    display: none;
+  }
+  header h1::before {
+    display: none;
+  }
+  header ul {
+    position: absolute;
+    bottom: 25px;
+    left: auto;
+    right: 20px;
+  }
+
+  main {
+    margin-left: 0px;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 899px) {
+  main section article {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 679px) {
+  main section article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 539px) {
+  header ul {
+    display: none;
+  }
+
+  main section article {
+    width: 100%;
+  }
+  main ul {
+    width: 100%;
+  }
+  main ul li {
+    width: 32%;
+    margin-right: 2%;
+  }
+  main ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
